@@ -7,3 +7,5 @@ class Platform(pygame.sprite.Sprite):
         self.image.fill(color)
         # Top left just says the corresponding rectangle created from the surface starts at x, y
         self.rect = self.image.get_rect(topleft=(x, y))
+        self.rect.x = x
+        self.rect.y = y
