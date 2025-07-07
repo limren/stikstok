@@ -55,8 +55,6 @@ while running:
     pygame.display.flip()
 
     # limits FPS to 60
-    # dt is delta time in seconds since last frame, used for framerate-
-    # independent physics.
-    dt = clock.tick(60) / 1000
+    clock.tick(60)
 
 pygame.quit()
